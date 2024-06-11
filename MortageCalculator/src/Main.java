@@ -18,7 +18,8 @@ public class Main {
         double months = numberOfYears * 12;
 
         double monthlyPaymentAmount = principalAmount * ((monthlyInterestRate * (Math.pow(1 + monthlyInterestRate, months))) / (Math.pow((1 + monthlyInterestRate), months) - 1));
+        String monthlyPayment = String.format("%.2f", monthlyPaymentAmount);
 
-        System.out.println("The monthly payment is: " + Math.round(monthlyPaymentAmount) + "€");
+        System.out.println("The monthly payment is: " + monthlyPayment + " €");
     }
 }
